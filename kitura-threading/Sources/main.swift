@@ -9,7 +9,7 @@ extension Thread {
       return currentID
     } else {
       let newID = UUID().uuidString
-      self.threadDictionary["titan_id"] = newID
+      self.threadDictionary["titan_id"] = NSString(string: newID)
       return newID
     }
   }
