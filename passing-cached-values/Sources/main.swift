@@ -93,11 +93,15 @@ instance.post("/receiveStatisticsCrashy") { (request) -> Int in
 // There's a few ways to do this. I prefer this one.
 
 extension Titan {
-  func post(_ path: String, errorHandler: @escaping (Error) -> (ResponseType), handler: @escaping (RequestType) throws -> Int) {
+  func post(_ path: String, errorHandler: @escaping (Error) -> (ResponseType) = Titan.GlobalErrorHandler, handler: @escaping (RequestType) throws -> Int) {
     // Uncomment the following to get a very nice compiler error.
     // self.post(path, handler)
 
     self.post(path, toNonThrowing(handler, errorHandler: errorHandler))
+  }
+
+  static let GlobalErrorHandler: (Error) -> (ResponseType) = { err in
+    return Response(500, err.localizedDescription)
   }
 
   func toNonThrowing(_ handler: @escaping (RequestType) throws -> Int,
@@ -116,11 +120,7 @@ extension Titan {
 
 // We now have a global error handler to deal with all kinds of issues!
 
-let globalErrorHandler: (Error) -> (ResponseType) = { err in
-  return Response(500, err.localizedDescription)
-}
-
-instance.post("/receiveStatistics", errorHandler: globalErrorHandler) { (req) -> Int in
+instance.post("/receiveStatistics") { (req) -> Int in
   try processJSON(req.json as Any) // No do/catch required!
   return 201
 }
