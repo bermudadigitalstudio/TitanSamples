@@ -1,9 +1,9 @@
 FROM swift:4 
 
 RUN apt-get update && apt-get install -y openssl libssl-dev
-COPY Package.swift /code/Package.swift
+COPY Package.swift Package.resolved /code/ 
 WORKDIR /code
-RUN swift build
+RUN swift build || true
 COPY ./Sources /code/Sources
 RUN swift build
 EXPOSE 8000
