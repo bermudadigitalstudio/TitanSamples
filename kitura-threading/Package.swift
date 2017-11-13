@@ -7,8 +7,8 @@ let package = Package(
         .executable(name: "kitura-threading", targets: ["kitura-threading"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/bermudadigitalstudio/TitanKituraAdapter.git", from: "0.0.0"),
-        .package(url: "https://github.com/bermudadigitalstudio/Titan", from: "0.0.0")
+        .package(url: "https://github.com/bermudadigitalstudio/TitanKituraAdapter.git", .branch("swift4")),
+        .package(url: "https://github.com/bermudadigitalstudio/Titan.git", .branch("swift4"))
     ],
     targets: [
         .target(

@@ -47,8 +47,8 @@ func createOrRetrieveUnsafeDB() -> MyUnsafeDatabase {
 }
 
 extension String: ResponseType {
-    public var body: String {
-        return self
+    public var body: Data {
+        return self.data(using: .utf8)!
     }
     
     public var code: Int {
@@ -61,8 +61,8 @@ extension String: ResponseType {
 }
 
 titanInstance.get("/") { req, _ in
-  db.read()
-  createOrRetrieveUnsafeDB().read()
+  _ = db.read()
+  _ = createOrRetrieveUnsafeDB().read()
   return (req, Thread.current.id + "\n")
 }
 
