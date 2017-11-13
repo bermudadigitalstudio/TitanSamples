@@ -1,4 +1,4 @@
-FROM swiftdocker/swift:3.0.2
+FROM swift:4 
 
 RUN apt-get update && apt-get install -y openssl libssl-dev
 COPY Package.swift /code/Package.swift

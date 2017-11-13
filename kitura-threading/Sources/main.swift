@@ -46,10 +46,24 @@ func createOrRetrieveUnsafeDB() -> MyUnsafeDatabase {
   }
 }
 
-titanInstance.get("/") {
+extension String: ResponseType {
+    public var body: String {
+        return self
+    }
+    
+    public var code: Int {
+        return 200
+    }
+    
+    public var headers: [Header] {
+        return []
+    }
+}
+
+titanInstance.get("/") { req, _ in
   db.read()
   createOrRetrieveUnsafeDB().read()
-  return Thread.current.id + "\n"
+  return (req, Thread.current.id + "\n")
 }
 
 TitanKituraAdapter.serve(titanInstance.app, on: 8000)

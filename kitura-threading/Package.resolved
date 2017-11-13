@@ -1,0 +1,142 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CCurl",
+        "repositoryURL": "https://github.com/IBM-Swift/CCurl.git",
+        "state": {
+          "branch": null,
+          "revision": "f481bd86e58787824cc1c1ec1786e03b67831f38",
+          "version": "0.4.1"
+        }
+      },
+      {
+        "package": "Kitura-net",
+        "repositoryURL": "https://github.com/IBM-Swift/Kitura-net.git",
+        "state": {
+          "branch": null,
+          "revision": "96c196ef01533f199642e7d39cff51dd50c05faf",
+          "version": "1.7.20"
+        }
+      },
+      {
+        "package": "LoggerAPI",
+        "repositoryURL": "https://github.com/IBM-Swift/LoggerAPI.git",
+        "state": {
+          "branch": null,
+          "revision": "6b62fe66da9b8794d6581e5c341710eea3173cd4",
+          "version": "1.7.1"
+        }
+      },
+      {
+        "package": "SSLService",
+        "repositoryURL": "https://github.com/IBM-Swift/BlueSSLService.git",
+        "state": {
+          "branch": null,
+          "revision": "7adf7cacc447d447df5dcc3058cabd402177c5aa",
+          "version": "0.12.64"
+        }
+      },
+      {
+        "package": "Socket",
+        "repositoryURL": "https://github.com/IBM-Swift/BlueSocket.git",
+        "state": {
+          "branch": null,
+          "revision": "00b126a2c19520bbf51cd26e8c0cc41dacbc5a05",
+          "version": "0.12.76"
+        }
+      },
+      {
+        "package": "Titan",
+        "repositoryURL": "https://github.com/bermudadigitalstudio/Titan",
+        "state": {
+          "branch": null,
+          "revision": "3bb024495c18088512eb45fffca7d82aa8c511db",
+          "version": "0.7.2"
+        }
+      },
+      {
+        "package": "Titan404",
+        "repositoryURL": "https://github.com/bermudadigitalstudio/Titan404.git",
+        "state": {
+          "branch": null,
+          "revision": "799e94487a49e24aa58f68c8f1196d8adbae5a08",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "package": "TitanCORS",
+        "repositoryURL": "https://github.com/bermudadigitalstudio/TitanCORS.git",
+        "state": {
+          "branch": null,
+          "revision": "f8d3ced06259e774dbd6eefed8aa5390d5b7d7f9",
+          "version": "0.1.1"
+        }
+      },
+      {
+        "package": "TitanCore",
+        "repositoryURL": "https://github.com/bermudadigitalstudio/TitanCore.git",
+        "state": {
+          "branch": null,
+          "revision": "584bfefddc42ec31673ecc78194a170f29578dc5",
+          "version": "0.3.0"
+        }
+      },
+      {
+        "package": "TitanErrorHandling",
+        "repositoryURL": "https://github.com/bermudadigitalstudio/TitanErrorHandling.git",
+        "state": {
+          "branch": null,
+          "revision": "3fbe2a0a614bec0804f37a9b85d7aeda77e8c547",
+          "version": "0.1.1"
+        }
+      },
+      {
+        "package": "TitanFormURLEncodedBodyParser",
+        "repositoryURL": "https://github.com/bermudadigitalstudio/TitanFormURLEncodedBodyParser.git",
+        "state": {
+          "branch": null,
+          "revision": "8942787bae934da12e6f96f563bb9e6940679a28",
+          "version": "0.2.1"
+        }
+      },
+      {
+        "package": "TitanJSONRequestBody",
+        "repositoryURL": "https://github.com/bermudadigitalstudio/TitanJSONRequestBody.git",
+        "state": {
+          "branch": null,
+          "revision": "2e0abb9b2b28d2e4f9f36d0de227b826d50ae374",
+          "version": "0.1.1"
+        }
+      },
+      {
+        "package": "TitanKituraAdapter",
+        "repositoryURL": "https://github.com/bermudadigitalstudio/TitanKituraAdapter.git",
+        "state": {
+          "branch": null,
+          "revision": "416890a250469d8db4ac61bf99c078b645d8b9f8",
+          "version": "0.6.1"
+        }
+      },
+      {
+        "package": "TitanQueryString",
+        "repositoryURL": "https://github.com/bermudadigitalstudio/TitanQueryString.git",
+        "state": {
+          "branch": null,
+          "revision": "0b08f8a72ca364370a13f69000e808839263db24",
+          "version": "0.1.3"
+        }
+      },
+      {
+        "package": "TitanRouter",
+        "repositoryURL": "https://github.com/bermudadigitalstudio/TitanRouter.git",
+        "state": {
+          "branch": null,
+          "revision": "4395921ed4a02b4ab4e6ab1a218be68498d04c0b",
+          "version": "0.3.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
